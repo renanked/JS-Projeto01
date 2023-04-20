@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <title>Super Mario</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="points"> 
+        
+    </div>
+    <div class="game-board">
+        <h1 class="points"> SCORE: </h1>
+    
+    
+    
+        </h1>
+        <span class="score"></span>
+
+
+        <img src="img/Nuvem.png" class="nuvem">
+        <img src="img/Tubo.png" class="tubo">
+        <img src="img/mariogif" class="mario">
+        <img src="img/fundo.png" class="fundo">
+        <img onclick="window.location.reload()" 
+        onmouseover="this.src='img/Button2.png'"
+        onmouseout="this.src='img/Button.png'" class="botao">
+        
+        
+        
+        
+    </div>
+    <div class="terra">
+        <img src="img/terrinha.png" class="chao">
+        
+    </div>
+    <audio id="colisao-som" src="audio/morreu.mp3"></audio>
+    <audio autoplay loop class="audio">
+        <source src="audio/fundo1.mp3" type="audio/mpeg">
+      </audio>
+
+
+
+
+</body>
+<script src="js/script.js"></script>
+
+</html>
