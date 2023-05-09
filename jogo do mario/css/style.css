@@ -1,0 +1,232 @@
+/*reset css*/ 
+
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    font-family: 'VT323';
+    }
+  
+    .game-board {
+        width: 100%;
+        height: 600px;
+        border-bottom: 3px solid rgb(155, 232, 66);
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+        background: linear-gradient(#87CEEB, #E0F6FF);
+        
+        
+    }
+    .fundo{
+        width: 100%;
+        height: 598px;
+        
+    }
+    .points{
+        position: absolute;
+        top: 30px;
+        left: 4px;
+        font-size: 30px ;
+        font-family: 'VT323', monospace;
+        color: #fff;
+       text-shadow: 0 2px #000;
+       z-index: 10;
+      
+    
+    }
+    .score {
+        position: absolute;
+        top: 30px;
+        left: 77px;
+        font-size: 30px ;
+        font-family: 'VT323', monospace;
+        color: rgb(255, 217, 0);
+        text-shadow: 0 2px #000;
+        font-weight: bold;
+        z-index: 10;
+  }
+
+.chao{
+    
+    width: 100%;
+}
+.terra{
+    width: 100%;
+    height: 400px;
+    position: fixed;
+    overflow: hidden;
+    background-color: #8C3E0E;
+ 
+
+
+}
+
+
+.tubo{
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    animation: animaçao-tubo 1.7s infinite linear;
+
+}
+
+.mario{
+    width: 155px;
+    position: absolute;
+    bottom: 0;
+}
+
+.mario2{
+  width: 270px;
+  position: absolute;
+  bottom: 0;
+}
+
+.jump{
+    animation: jump 500ms ease-out;
+    position: absolute;
+
+}
+
+.nuvem {
+    background: transparent;
+    position: absolute;
+    width: 550px;
+    animation: nuvem-animation 10s infinite linear;
+  }
+  .parada {
+    animation-play-state: paused;
+    
+  }
+
+  .botao{
+    width: 15%;    
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    z-index: 11;
+  }
+  
+  .botao3{
+  width: 15%;    
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  
+}
+
+
+.menu1{
+  
+  width: 27px;  
+  position: absolute;
+  top: 3%;
+  left: 19px;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.corrida {
+  top: 70%;
+  transform: scaleX(-1) ;
+  background: transparent;
+  position: absolute;
+  width: 40px;
+  animation: nuvem-animation 15s infinite linear;
+  z-index: 10;
+}
+  .parada2 {
+    animation-play-state: paused;
+    
+  }
+ 
+  #colisao-som{
+    animation-play-state: paused;
+  }
+
+/* @media only screen and (max-width: 768px) {
+  .game-board {
+    height: 400px;
+    }
+  
+    .fundo {
+      height: 398px;
+    }
+  
+    .points,
+    .score {
+      font-size: 20px;
+    }
+  
+    .mario {
+      width: 80px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .game-board {
+      height: 300px;
+    }
+  
+    .fundo {
+      height: 298px;
+    }
+  
+    .points,
+    .score {
+      font-size: 16px;
+    }
+  
+    .mario {
+      width: 50px;
+    }
+  } */
+
+@keyframes animaçao-tubo {
+    from {
+        right: -80px;
+    }
+    to {
+        right: 100%;
+    }
+}
+@keyframes jump {
+
+0% {
+    bottom: 0;
+}
+40% {
+    bottom: 180px;
+}
+50% { 
+    bottom: 180px;
+}
+60% {
+    bottom: 180px;
+}
+100% {
+    bottom: 0;
+}
+}
+@keyframes nuvem-animation {
+  from {
+    right: -550px;
+
+  }
+
+  to{
+    right: 100%;
+
+  }
+
+
+
+}
+
+
